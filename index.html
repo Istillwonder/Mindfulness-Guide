@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0074)file:///C:/Users/tampa/OneDrive/Desktop/Completed%20mindfulness_guide.html -->
+<!-- saved from url=(0061)file:///C:/Users/tampa/Downloads/mindfulness_guide%20(6).html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -544,7 +544,7 @@
     </svg>
     <div class="header-eyebrow" style="margin-top:0.25rem">Grades 6–8</div>
     <div class="progress-wrap" style="margin-top:0.75rem">
-      <div class="progress-bar"><div class="progress-fill" id="progress" style="width: 0%;"></div></div>
+      <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
       <div class="progress-label" id="progress-label">0 / 7</div>
     </div>
   </div>
@@ -554,39 +554,16 @@
     <button class="tab" onclick="switchTab(&#39;notes&#39;, this)">✏️ My Notes <span class="badge" id="note-count">0</span></button>
   </div>
 
-  <div id="guide-view" style="display: block;">
-    <div class="section-nav" id="section-nav"><button class="dot-btn" title="What is mindfulness?" aria-label="Section 1: What is mindfulness?">1</button><button class="dot-btn active" title="Your brain" aria-label="Section 2: Your brain">2</button><button class="dot-btn" title="Core practices" aria-label="Section 3: Core practices">3</button><button class="dot-btn" title="Everyday life" aria-label="Section 4: Everyday life">4</button><button class="dot-btn" title="Study skills" aria-label="Section 5: Study skills">5</button><button class="dot-btn" title="Myths &amp; facts" aria-label="Section 6: Myths &amp; facts">6</button><button class="dot-btn" title="My plan" aria-label="Section 7: My plan">7</button></div>
-    <div id="section-content">
-    <div class="card">
-      <div class="card-band"></div>
-      <div class="card-body">
-        <div class="section-eyebrow">Section 2 of 7 — Your brain</div>
-        <h2>Your brain on mindfulness</h2>
-        <div class="section-body"><p>Your brain is not fixed — it changes and adapts throughout your life. Scientists call this <strong>neuroplasticity</strong>. The habits you practice now actually reshape the structure of your brain. Mindfulness is one of the most well-researched brain-training tools available.</p>
-<p>When you feel stressed or threatened, a small part of your brain called the <strong>amygdala</strong> fires a "danger signal." This floods your body with stress hormones, making it hard to think clearly. This is sometimes called the "fight-or-flight" response.</p>
-<p>Mindfulness activates the <strong>prefrontal cortex</strong> — the thinking, reasoning part of your brain — and helps calm the amygdala. In other words, it gives you a <em>pause</em> between a trigger and your reaction. That pause is where your power lives.</p></div>
-        <div class="key-points">
-          <div class="key-points-title">📌 Key points</div>
-          <ul><li>Neuroplasticity means your brain literally changes based on what you practice regularly</li><li>The amygdala triggers stress; the prefrontal cortex helps you pause and think — mindfulness strengthens that balance</li><li>Emotions are information, not the enemy — awareness helps you respond instead of just react</li></ul>
-        </div>
-        <div class="reflection">
-          <div class="reflection-title">✏️ Your reflection</div>
-          <div class="reflection-prompt">Describe a recent situation where your emotions "took over" and you reacted before thinking. What might have happened differently if you'd had a moment to pause?</div>
-          <textarea id="ta-s2" placeholder="Write your thoughts here — your notes save automatically to this device..."></textarea>
-          <div class="save-row">
-            <button class="save-btn" onclick="manualSave(&#39;s2&#39;)">💾 Save note</button>
-            <span class="saved-msg" id="saved-s2">✅ Saved!</span>
-          </div>
-        </div>
-      </div>
-    </div></div>
+  <div id="guide-view">
+    <div class="section-nav" id="section-nav"></div>
+    <div id="section-content"></div>
     <div class="nav-arrows" style="margin-top:1rem">
-      <button class="arrow-btn" id="prev-btn" onclick="navigate(-1)">← Previous</button>
-      <button class="arrow-btn primary" id="next-btn" onclick="navigate(1)">Next →</button>
+      <button class="arrow-btn" id="prev-btn" disabled="">← Previous</button>
+      <button class="arrow-btn primary" id="next-btn">Next →</button>
     </div>
   </div>
 
-  <div class="notes-view" id="notes-view" style="display: none;">
+  <div class="notes-view" id="notes-view">
     <div class="notes-header">
       <h2>✏️ My Reflections</h2>
       <p>Everything you've written, all in one place.</p>
@@ -635,6 +612,23 @@ const SECTIONS = [
   },
   {
     id:'s3',
+    short:'That little voice',
+    title:'That little voice in your head',
+    body:`<p>You know that little voice in your head — the one that never seems to know when to be quiet? The one that shows up right before you walk into a room full of people and whispers <em>"everyone is going to stare at you."</em> Or the one that replays that thing you said three days ago and won't let it go. Or the one that says <em>"you're not good enough"</em> before you've even tried.</p>
+<p>That voice has a lot of names — your inner critic, your mental chatter, your monkey mind. Whatever you call it, everyone has one. Your teachers have one. Your parents have one. Even the most confident person you know has one. It is completely, totally normal.</p>
+<p>The problem isn't that the voice exists. The problem is that most of us believe everything it says.</p>
+<p><strong>What is the voice, actually?</strong><br>Your brain's number one job is to keep you safe. It is always scanning for danger, problems, and threats — and it has been doing this since humans lived in caves. Back then, that constant alertness kept people alive. Today, your brain still runs that same software, but instead of watching for lions, it watches for social threats — embarrassment, rejection, failure, being left out. That inner voice is your brain trying to protect you. The trouble is it can't tell the difference between a real threat and an imagined one. So it treats <em>"I might say something dumb in class"</em> the same way it treats <em>"there is a lion outside."</em> Full alarm. Every time.</p>
+<p><strong>What the voice sounds like:</strong><br><em>"Everyone is judging me right now" &nbsp;·&nbsp; "I'm going to fail / mess this up / embarrass myself" &nbsp;·&nbsp; "That was so stupid — why did I say that?" &nbsp;·&nbsp; "They don't really like me" &nbsp;·&nbsp; "I'm not as smart / funny / good-looking as everyone else" &nbsp;·&nbsp; "Something bad is probably going to happen."</em></p>
+<p>Sound familiar? That's the voice. And here's the thing — it feels like your voice, like it's telling you facts. But it isn't. It's a habit your brain has developed, and like any habit, it can be changed.</p>
+<p><strong>Mindfulness and the voice:</strong><br>You can't turn the voice off — and trying to fight it usually makes it louder. But mindfulness gives you something better than fighting it. It gives you <em>distance</em> from it.</p>
+<p>Instead of <em>"I am going to fail this test"</em> — which feels like a fact — you learn to notice: <em>"I'm having the thought that I'm going to fail this test."</em></p>
+<p>That tiny shift changes everything. <strong>You are not the thought. You are the one noticing the thought.</strong> And once you can notice it, you don't have to believe it or act on it.</p>
+<p>So the next time the voice shows up, just become aware of it. Noticing that you are not the voice but the one who is aware of the voice will give you the upper hand. Then you can move your awareness to something else — your breath, what's around you, what you're doing right now. As you begin to practice this skill, it will become part of your superpower!</p>`,
+    points:['Everyone has an inner voice — it's your brain trying to protect you, not a sign something is wrong with you','The voice feels like the truth but it's just a habit — a pattern your brain learned','Mindfulness creates distance between you and the voice — you observe it instead of becoming it','You can't silence the voice but you can choose not to believe everything it says'],
+    prompt:'Think of a situation where that inner voice was really loud. What was it telling you? Now rewrite it as an observation — "I noticed a thought that..." — and notice how it feels to be the observer instead of the believer. That gap right there? That's your superpower kicking in.'
+  },
+  {
+    id:'s4',
     short:'Core practices',
     title:'Core awareness practices',
     body:`<p>Mindfulness doesn't require a yoga mat, special music, or any equipment. These are practices you can use anywhere — in class, at lunch, on the bus, before a test, or before bed.</p>
@@ -645,7 +639,7 @@ const SECTIONS = [
     prompt:'Try the 5-4-3-2-1 technique right now as you read this. Write what you noticed for each sense.'
   },
   {
-    id:'s4',
+    id:'s5',
     short:'Everyday life',
     title:'Mindfulness in everyday life',
     body:`<p>Mindfulness doesn't have to be a separate activity. It can be woven into the ordinary moments of your day — no extra time required.</p>
@@ -657,7 +651,7 @@ const SECTIONS = [
     prompt:'Think of a person in your life who makes you feel truly heard. What do they do that creates that feeling? How could you bring some of that into your own conversations?'
   },
   {
-    id:'s5',
+    id:'s6',
     short:'Study skills',
     title:'Mindfulness and your study skills',
     body:`<p>Here's something most students don't realize: mindfulness isn't just about feeling calm. It <em>directly upgrades</em> the skills you need to learn, study, and perform well in school.</p>
@@ -669,7 +663,7 @@ const SECTIONS = [
     prompt:'Which study skill do you think mindfulness could improve most for you — focus, memory, or test anxiety? What would that improvement actually look like in your life?'
   },
   {
-    id:'s6',
+    id:'s7',
     short:'Myths & facts',
     title:'Common myths about mindfulness',
     body:`<p>There are a lot of misunderstandings about mindfulness floating around. Here are the most common ones — and the truth behind them.</p>
@@ -681,7 +675,7 @@ const SECTIONS = [
     prompt:'Which myth did you believe before reading this? What do you think now? Has anything changed about how you see mindfulness?'
   },
   {
-    id:'s7',
+    id:'s8',
     short:'My plan',
     title:'My personal practice plan',
     body:`<p>Mindfulness doesn't require a yoga mat, special music, or any equipment. It requires only your attention — and that's something you always have with you.</p>
@@ -767,13 +761,16 @@ function render() {
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
   prevBtn.disabled = current === 0;
+  prevBtn.onclick = () => navigate(-1);
 
   if (current === SECTIONS.length - 1) {
-    nextBtn.textContent = '🎉 I\'m done!';
+    nextBtn.textContent = '🎉 All done!';
     nextBtn.disabled = true;
+    nextBtn.onclick = null;
   } else {
-    nextBtn.innerHTML = 'Next &#8594;';
+    nextBtn.textContent = 'Next →';
     nextBtn.disabled = false;
+    nextBtn.onclick = () => navigate(1);
   }
 
   updateProgress();
